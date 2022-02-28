@@ -1,2 +1,0 @@
-# andrericardodev
-Site pessoal
