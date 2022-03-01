@@ -1,0 +1,101 @@
+.introducao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 93px;
+  background: url("../img/detalhe_intro.svg") no-repeat center;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  z-index: -1;  
+}
+.introducao h1::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #FFC814 0%, #FFBB00 50.52%, #E5A40B 100%);
+  position: absolute;
+  left: 400px;
+  bottom: 20px;
+  
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #595959;
+}
+
+@media (max-width: 700px) {
+  .introducao h1 {
+    font-size: 4rem;
+  }
+  .introducao h1::before {
+    width: 60px;
+    height: 10px;
+    top: -10px;
+    left: -10px;
+  }
+  .introducao h1::after {
+    width: 13px;
+    height: 13px;
+    left: 355px;
+    bottom: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .introducao h1::before {
+    width: 25px;
+    height: 10px;
+    top: -15px;
+    left: -10px;
+  }
+  .introducao h1::after {
+    width: 10px;
+    height: 10px;
+    left: 265px;
+    bottom: 10px;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao h1 {
+    font-size: 2.125rem;
+    line-height: 1.125;
+    margin-bottom: 15px;
+  }
+  .introducao h1::before {
+    width: 25px;
+    height: 10px;
+    top: -15px;
+    left: -10px;
+  }
+  .introducao h1::after {
+    width: 0;
+    height: 0;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+}

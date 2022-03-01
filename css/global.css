@@ -8,6 +8,10 @@ h1, h2, h3, p {
   margin: 0px;
 }
 
+h1 {
+  font-family: 'Vollkorn', serif; ;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
