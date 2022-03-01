@@ -18,19 +18,7 @@
   position: absolute;
   top: -30px;
   left: -20px;
-  z-index: -1;  
-}
-.introducao h1::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background: linear-gradient(180deg, #FFC814 0%, #FFBB00 50.52%, #E5A40B 100%);
-  position: absolute;
-  left: 400px;
-  bottom: 20px;
-  
+  z-index: -1;
 }
 
 .introducao p {
@@ -48,18 +36,11 @@
     top: -10px;
     left: -10px;
   }
-  .introducao h1::after {
-    width: 13px;
-    height: 13px;
-    left: 355px;
-    bottom: 18px;
-  }
 }
 
 @media (max-width: 550px) {
   .introducao h1 {
     font-size: 3rem;
-    line-height: 1;
     margin-bottom: 20px;
   }
   .introducao h1::before {
@@ -68,12 +49,7 @@
     top: -15px;
     left: -10px;
   }
-  .introducao h1::after {
-    width: 10px;
-    height: 10px;
-    left: 275px;
-    bottom: 10px;
-  }
+
   .introducao p {
     font-size: 1rem;
   }
@@ -82,7 +58,6 @@
 @media (max-width: 400px) {
   .introducao h1 {
     font-size: 2.125rem;
-    line-height: 1.125;
     margin-bottom: 15px;
   }
   .introducao h1::before {
@@ -91,12 +66,7 @@
     top: -15px;
     left: -10px;
   }
-  .introducao h1::after {
-    width: 8px;
-    height: 8px;
-    left: 200px;
-    bottom: 10px;
-  }
+
   .introducao p {
     font-size: 1rem;
   }
