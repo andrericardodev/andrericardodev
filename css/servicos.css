@@ -1,0 +1,42 @@
+.servicos {
+  background: #0e0e0e;
+  color: #fff;
+}
+
+.servicos-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+
+}
+
+.servicos-container::after {
+  content: '';
+  display: block;
+  width: 76px;
+  height: 93px;
+  background: url("../img/detalhe_intro.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.servicos .subtitulo {
+  color: #000000;
+}
+
+.servicos-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #9c9c9c;
+}
+
+.servicos-texto strong {
+  color: #dedede;
+}
