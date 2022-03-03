@@ -1,0 +1,28 @@
+.sobre .subtitulo {
+  color: #dedede;  
+}
+
+.sobre-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #585858;
+}
+
+.sobre-texto strong {
+  color: #2e2e2e;
+}
+
+@media (max-width: 800px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sobre .subtitulo {
+    color: #0E0E0E;
+  }
+  .sobre-texto {
+    font-size: 1.25rem;
+  }
+}
