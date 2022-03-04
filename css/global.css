@@ -104,6 +104,26 @@ img {
   height: auto;
 }
 
+/* Reusable CSS Classes */
+.section {
+  padding: 40px 20px;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
 .subtitulo {
   font-family: 'Vollkorn', serif;
   font-size: 8rem;
