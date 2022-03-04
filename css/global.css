@@ -23,6 +23,11 @@
   --gray11: hsl(var(--hue-color), 0%, 10%);
   --gray12: hsl(var(--hue-color), 0%, 5%);
 
+  --body-color: hsl(var(--hue-color), 0%, 97%);
+  --text-color: hsl(var(--hue-color), 0%, 35%);
+  --title-color: hsl(var(--hue-color), 0%, 5%);
+
+
   /* ==== Font and typography ==== */
   --body-font: "Fira Sans", sans-serif;
   --title-font: 'Vollkorn', serif;
@@ -63,29 +68,40 @@
   }
 }
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
-  margin: 0px;
-  color: #0e0e0e;
+  font-size: var(--normal-font-size);
+  background: var(--body-color);
+  color: var(--text-color);
 }
 
-h1, h2, h3, p {
-  margin: 0px;
-}
-
-h1 {
-  font-family: 'Vollkorn', serif;
+h1, h2, h3, h4 {
+  font-family: var(--title-font);
+  color: var(--title-color);
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
-  display: block;
+  height: auto;
 }
 
 .subtitulo {
