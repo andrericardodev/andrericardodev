@@ -124,6 +124,17 @@ img {
   text-align: center;
 }
 
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .subtitulo {
   font-family: 'Vollkorn', serif;
   font-size: 8rem;
