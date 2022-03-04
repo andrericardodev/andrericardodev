@@ -1,5 +1,70 @@
+:root {
+  --header-height: 3rem;
+
+  /* ==== Colors ==== */
+  --hue-color: 45;
+
+  /* Primary */
+  --primary-color: hsl(var(--hue-color), 90%, 65%);
+  --primary-light-color: hsl(var(--hue-color), 95%, 54%);
+  --primary-dark-color: hsl(var(--hue-color), 95%, 45%);
+
+  /* Gray */
+  --gray01: hsl(var(--hue-color), 0%, 97%);
+  --gray02: hsl(var(--hue-color), 0%, 93%);
+  --gray03: hsl(var(--hue-color), 0%, 87%);
+  --gray04: hsl(var(--hue-color), 0%, 80%);
+  --gray05: hsl(var(--hue-color), 0%, 70%);
+  --gray06: hsl(var(--hue-color), 0%, 61%);
+  --gray07: hsl(var(--hue-color), 0%, 44%);
+  --gray08: hsl(var(--hue-color), 0%, 35%);
+  --gray09: hsl(var(--hue-color), 0%, 25%);
+  --gray10: hsl(var(--hue-color), 0%, 18%);
+  --gray11: hsl(var(--hue-color), 0%, 10%);
+  --gray12: hsl(var(--hue-color), 0%, 5%);
+
+  /* ==== Font and typography ==== */
+  --body-font: "Fira Sans", sans-serif;
+  --title-font: 'Vollkorn', serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /* ==== Margenes Bottom ==== */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* ==== z index ==== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media scree and (min-width: 980px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
 body {
-  font-family: "Fira Sans", Arial, sans-serif;
+  font-family: var(--body-font);
   margin: 0px;
   color: #0e0e0e;
 }
@@ -9,7 +74,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-family: 'Vollkorn', serif; ;
+  font-family: 'Vollkorn', serif;
 }
 
 ul {
