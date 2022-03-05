@@ -3,7 +3,8 @@
 
   &__container {
     row-gap: 3rem;
-    margin-top: 100px;
+    align-items: center;
+    height: 100vh;
   }
   &__title {
     font-size: var(--biggest-font-size);
@@ -40,5 +41,6 @@
     font-size: 1.5rem;
     line-height: 1.125;
     margin-bottom: var(--mb-2);
+    color: var(--subtitle-color);
   }
 }

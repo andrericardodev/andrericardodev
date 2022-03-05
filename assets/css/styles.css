@@ -10,7 +10,8 @@
   --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
   --first-color-alt: hsl(var(--hue), var(--sat), 50%);
   --title-color: hsl(var(--hue), 0%, 5%);
-  --text-color: hsl(var(--hue), 0%, 35%);
+  --subtitle-color: hsl(var(--hue), 0%, 35%);
+  --text-color: hsl(var(--hue), 0%, 20%);
   --text-color-light: hsl(var(--hue), 4%, 65%);
   --body-color: hsl(var(--hue), 0%, 97%);
   --container-color: #FFF;
@@ -20,7 +21,7 @@
   --body-font: 'Fira Sans', sans-serif;
   --title-font: 'Vollkorn', serif;
   --biggest-font-size: 2.25rem;
-  --h2-font-size: 1.75rem;
+  --h2-font-size: 2rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: 1rem;
   --small-font-size: .813rem;
@@ -94,7 +95,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 1rem 0;
 }
 
 .section__title {
@@ -102,16 +103,18 @@ img {
   color: var(--title-color);
   text-align: left;
   margin-bottom: var(--mb-0-5);
+  margin-left: 10px;
   position: relative;
 }
 
 .section__title::before {
   content: "";
-  width: 20%;
-  height: 4px;
+  width: 5px;
+  height: 40px;
   background-color: var(--first-color);
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: -10px;
 }
 
 .section__title-center {
@@ -229,7 +232,10 @@ img {
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 3rem;
-  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 
 .home__title {
@@ -269,6 +275,7 @@ img {
   font-size: 1.5rem;
   line-height: 1.125;
   margin-bottom: var(--mb-2);
+  color: var(--subtitle-color);
 }
 
 /*=============== BUTTONS ===============*/

@@ -12,7 +12,8 @@
     --first-color-alt: hsl(var(--hue), var(--sat), 50%);
 
     --title-color: hsl(var(--hue), 0%, 5%);
-    --text-color: hsl(var(--hue), 0%, 35%);
+    --subtitle-color: hsl(var(--hue), 0%, 35%);
+    --text-color: hsl(var(--hue), 0%, 20%);
     --text-color-light: hsl(var(--hue), 4%, 65%);
 
     --body-color: hsl(var(--hue), 0%, 97%);
@@ -26,7 +27,7 @@
     --title-font: 'Vollkorn', serif;
 
     --biggest-font-size: 2.25rem;
-    --h2-font-size: 1.75rem;
+    --h2-font-size: 2rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: 1rem;
     --small-font-size: .813rem;

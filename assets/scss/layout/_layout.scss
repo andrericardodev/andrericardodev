@@ -1,21 +1,23 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-  padding: 4.5rem 0 1rem;
+  padding: 1rem 0;
   
   &__title{
       font-size: var(--h2-font-size);
       color: var(--title-color);
       text-align: left;
       margin-bottom: var(--mb-0-5);
+      margin-left: 10px;
       position: relative;
 
       &::before {
         content: "";
-        width: 20%;
-        height: 4px;
+        width: 5px;
+        height: 40px;
         background-color: var(--first-color);
         position: absolute;
-        bottom: 0;
+        top: 0;
+        left: -10px;
       }
   }
   &__title-center{
