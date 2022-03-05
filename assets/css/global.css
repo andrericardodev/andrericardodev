@@ -50,15 +50,17 @@
   --mb-3: 3rem;
 
   /* ==== z index ==== */
+  --z-back: -10;
+  --z-normal: 1
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
 /* Font size for large devices */
-@media scree and (min-width: 980px) {
+@media scree and (min-width: 768px) {
   :root {
-    --big-font-size: 3rem;
+    --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -69,7 +71,7 @@
 }
 
 /* Reset */
-* {
+*,::before,::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -102,16 +104,31 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Reusable CSS Classes */
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background: var(--primary-color);
+}
 .section {
   padding: 40px 20px;
 }
 
-.section__title {
-  font-size: var(--h1-font-size);
-}
+
 
 .section__subtitle {
   display: block;
@@ -125,22 +142,19 @@ img {
 }
 
 /* Layout */
-.container {
+.bd-grid {
   max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
 }
 
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
 
 
 
 
 
 .subtitulo {
-  font-family: 'Vollkorn', serif;
+  font-family: var(--title-font);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
