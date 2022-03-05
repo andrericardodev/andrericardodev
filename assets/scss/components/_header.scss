@@ -39,11 +39,13 @@
     row-gap: 1.5rem;
   }
   &__link,
-  &__logo,
   &__toggle{
     font-size: 1.125rem;
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+  }
+  &__logo{
+    max-width: 120px;
   }
   &__toggle{
     font-size: 1.3rem;

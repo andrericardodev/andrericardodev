@@ -192,10 +192,14 @@ img {
   row-gap: 1.5rem;
 }
 
-.nav__link, .nav__logo, .nav__toggle {
+.nav__link, .nav__toggle {
   font-size: 1.125rem;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+.nav__logo {
+  max-width: 120px;
 }
 
 .nav__toggle {
@@ -219,7 +223,7 @@ img {
   font-size: var(--biggest-font-size);
   line-height: 1.25;
   font-weight: var(--font-bold);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-1);
   position: relative;
 }
 
@@ -230,7 +234,7 @@ img {
   height: 10px;
   background: url("../img/detalhe_intro.svg") no-repeat center;
   position: absolute;
-  top: -12px;
+  top: -20px;
   left: -10px;
   z-index: -1;
 }
