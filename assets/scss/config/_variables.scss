@@ -26,9 +26,9 @@
     --title-font: 'Vollkorn', serif;
 
     --biggest-font-size: 2.25rem;
-    --h2-font-size: 1.25rem;
+    --h2-font-size: 1.75rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: 1rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
@@ -36,8 +36,8 @@
     @media screen and (min-width: 968px){
         --biggest-font-size: 3rem;
         --h2-font-size: 1.75rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.25rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
