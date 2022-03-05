@@ -10,8 +10,9 @@
     --sat: 98%; 
     --first-color: hsl(var(--hue), var(--sat), 55%);
     --first-color-light: hsl(var(--hue), var(--sat), 65%);
+    --first-color-dark: hsl(var(--hue), var(--sat), 45%);
     --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
-    --first-color-alt: hsl(var(--hue), var(--sat), 53%);
+    --first-color-alt: hsl(var(--hue), var(--sat), 50%);
 
     --title-color: hsl(var(--hue), 0%, 5%);
     --text-color: hsl(var(--hue), 0%, 35%);
@@ -27,7 +28,7 @@
     --body-font: 'Fira Sans', sans-serif;
     --title-font: 'Vollkorn', serif;
 
-    --biggest-font-size: 2rem;
+    --biggest-font-size: 2.25rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;

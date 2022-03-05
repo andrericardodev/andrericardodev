@@ -1,0 +1,41 @@
+/*=============== HOME ===============*/
+.home {
+
+  &__container {
+    row-gap: 3rem;
+  }
+  &__title {
+    font-size: var(--biggest-font-size);
+    line-height: 1.25;
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mb-0-75);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 10px;
+      background: url("../img/detalhe_intro.svg") no-repeat center;
+      position: absolute;
+      top: -12px;
+      left: -10px;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: linear-gradient(180deg, var(--first-color-light) 0%, var(--first-color) 50.52%, var(--first-color-dark) 100%);
+      position: absolute;
+      left: 195px;
+      bottom: 10px;
+      
+    }
+  }
+  &__description {
+    margin-bottom: var(--mb-2);
+  }
+}
