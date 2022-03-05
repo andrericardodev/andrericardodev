@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!--Fonts-->
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Vollkorn:wght@400;700&display=swap"
       rel="stylesheet"
-    />
+    />-->
 
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/css/estilo.css" />
+    <!--<link rel="stylesheet" href="./assets/css/estilo.css" />-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Andre Ricardo - Desenvolvedor e Design</title>
@@ -25,44 +26,39 @@
   <body>
 
     <!--header-->
-    <header class="l-header" id="header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="/" class="nav__logo"><img src="./assets/img/logo-andrericardo.svg" alt="Andre Ricardo" width="183" height="25"/></a>
-        </div>
-        
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <img src="./assets/img/logo-andrericardo.svg" alt="Andre Ricardo" width="183" height="25"/>
+        </a>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="#sobre" class="nav__link">Sobre</a>
             </li>
-
             <li class="nav__item">
               <a href="#servicos" class="nav__link">Serviços</a>
             </li>
-
             <li class="nav__item">
               <a href="#portfolio" class="nav__link">Portfólio</a>
             </li>
-
             <li class="nav__item">
               <a href="#contato" class="nav__link">Contato</a>
             </li>
           </ul>
         </div>
-          
+
         <div class="nav__toggle" id="nav-toggle">
           <i class="uil uil-bars"></i>
         </div>
-        
+
+        <a href="#" class="button button__header">for recruiters</a>
       </nav>
     </header>
 
+    
+    
     <!--main-->
     <main class="introducao">
       <div>
@@ -123,8 +119,8 @@
       </div>
     </footer>
 
-    <!--scrool reveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+    
     
     <!--main js-->
     <script src="assets/js/main.js"></script>
