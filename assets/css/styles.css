@@ -314,7 +314,7 @@ img {
   color: var(--subtitle-color);
   font-size: 2.5em;
   margin-top: var(--mb-1);
-  margin-bottom: var(--mb-2);
+  margin-bottom: 4rem;
   -webkit-animation: home__scroll ease 2s infinite;
           animation: home__scroll ease 2s infinite;
 }
