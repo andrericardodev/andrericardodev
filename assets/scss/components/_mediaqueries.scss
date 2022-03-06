@@ -1,0 +1,45 @@
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 360px){
+  
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 767px){ 
+  /*body {
+    margin: 0;
+  }
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+
+    &__list{
+      flex-direction: row;
+      column-gap: 2.5rem;
+    }
+
+    &__link{
+      font-weight: var(--normal-font);
+    }
+
+    &__logo{
+      max-width: 180px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }*/
+}
+
+/* For large devices */
+@media screen and (min-width: 968px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+}

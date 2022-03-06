@@ -1,12 +1,12 @@
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
-  background-color: var(--body-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
   transition: .5s;
+  backdrop-filter: blur(20px);
 }
 
 /*=============== NAV ===============*/
@@ -15,8 +15,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
-  &__menu{
+  &__menu {
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+
+  &__link,
+  &__toggle{
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-normal);
+  }
+
+  &__toggle {
+    display: none;
+  }
+  /*&__menu{
     @media screen and (max-width: 767px) {
       position: fixed;
       background-color: var(--container-color);
@@ -50,8 +71,8 @@
   &__toggle{
     font-size: 1.3rem;
     cursor: pointer;
-  }
-}
+  }*/
+} 
 
 /* Show menu */
 .show-menu {

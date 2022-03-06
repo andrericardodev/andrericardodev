@@ -1,6 +1,6 @@
 /*=============== VARIABLES CSS ===============*/
 :root{
-    --header-height: 3rem;
+    --header-height: 4.5rem;
 
     /*========== Colors ==========*/
     --hue: 45; 
@@ -26,21 +26,16 @@
     --body-font: 'Fira Sans', sans-serif;
     --title-font: 'Vollkorn', serif;
 
-    --biggest-font-size: 2.25rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --biggest-font-size: 4.5em;
+    --h2-font-size: 2em;
+    --h3-font-size: 1.125em;
+    --normal-font-size: 1em;
+    --small-font-size: .813em;
+    --smaller-font-size: .75em;
 
     // Responsive typography
-    @media screen and (min-width: 968px){
-        --biggest-font-size: 3rem;
-        --h2-font-size: 1.75rem;
-        --h3-font-size: 1.5rem;
-        --normal-font-size: 1.25rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+    @media screen and (max-width: 968px){
+        
     }
 
     /*========== Font weight ==========*/
@@ -57,4 +52,10 @@
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+
+    /*========== Box shadow ==========*/
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    /*========== Scroll bar colors ==========*/
+    
 }
