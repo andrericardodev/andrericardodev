@@ -163,8 +163,16 @@ img {
   z-index: var(--z-fixed);
   -webkit-transition: .5s;
   transition: .5s;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+}
+
+back-d
+.header__shadow {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.header__shadow .nav {
+  height: calc(var(--header-height) - 1rem);
 }
 
 /*=============== NAV ===============*/

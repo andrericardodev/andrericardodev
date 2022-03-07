@@ -6,7 +6,15 @@
   left: 0;
   z-index: var(--z-fixed);
   transition: .5s;
-  backdrop-filter: blur(20px);
+  backdrop-filter: ;
+
+  &__shadow{
+    box-shadow: var(--box-shadow);
+  }
+
+  &__shadow .nav{
+    height: calc(var(--header-height) - 1rem);
+  }
 }
 
 /*=============== NAV ===============*/

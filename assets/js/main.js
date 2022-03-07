@@ -1,3 +1,9 @@
+/*=============== Shadow MENU ===============*/
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    header.classList.toggle("header__shadow", window.scrollY > 0);
+})
+
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
