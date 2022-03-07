@@ -6,7 +6,7 @@
   left: 0;
   z-index: var(--z-fixed);
   transition: .5s;
-  backdrop-filter: ;
+  background: var(--body-color);
 
   &__shadow{
     box-shadow: var(--box-shadow);

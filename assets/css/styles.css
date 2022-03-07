@@ -163,9 +163,9 @@ img {
   z-index: var(--z-fixed);
   -webkit-transition: .5s;
   transition: .5s;
+  background: var(--body-color);
 }
 
-back-d
 .header__shadow {
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
