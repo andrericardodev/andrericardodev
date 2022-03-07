@@ -258,10 +258,6 @@ img {
           justify-content: space-between;
 }
 
-.home__data {
-  width: 70%;
-}
-
 .home__title {
   font-size: var(--biggest-font-size);
   line-height: 1.125;
@@ -314,11 +310,29 @@ img {
   }
 }
 
+@media (max-width: 400px) {
+  .home__title {
+    font-size: 2.125rem;
+    margin-bottom: 15px;
+  }
+  .home__title::before {
+    width: 25px;
+    height: 10px;
+    top: -15px;
+    left: -10px;
+  }
+  .home__title::after {
+    width: 0;
+    height: 0;
+  }
+}
+
 .home__description {
   font-size: 1.5rem;
   line-height: 1.125;
   margin-bottom: var(--mb-2);
   color: var(--gray08);
+  max-width: 50ch;
 }
 
 .home__description strong {
@@ -328,7 +342,7 @@ img {
 @media (max-width: 700px) {
   .home__description {
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.25;
   }
 }
 
