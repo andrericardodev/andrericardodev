@@ -107,7 +107,7 @@ img {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: left;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
   position: relative;
 }
 
@@ -423,6 +423,57 @@ img {
 .about__description {
   font-size: 1.5rem;
   line-height: 1.125;
+}
+
+/*=============== SERVICES ===============*/
+.services__container {
+  width: 100%;
+}
+
+.services__list-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .services__list-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.services__card {
+  background: white;
+  border-bottom: 3px solid var(--first-color-light);
+  padding: 50px;
+  border-radius: 6px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.services__card > i {
+  color: var(--first-color-light);
+  font-size: 3em;
+}
+
+.services__card h3 {
+  font-family: var(--body-font);
+  font-size: 1.5em;
+  margin: 20px 0 10px 0;
+}
+
+.services__card:hover .services__lear-more-btn i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.services__description {
+  font-size: 1.125em;
 }
 
 /*=============== SCROLL UP ===============*/
