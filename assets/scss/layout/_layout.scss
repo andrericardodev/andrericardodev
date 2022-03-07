@@ -1,25 +1,26 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-  padding: 1rem 0;
+  padding: 2.5rem 0;
   
   &__title{
       font-size: var(--h2-font-size);
       color: var(--title-color);
       text-align: left;
+      padding-top: 3rem;
       margin-bottom: var(--mb-2);
       position: relative;
 
-      &::before {
+      /*&::before {
         content: "";
         display: block;
         width: 30px;
         height: 10px;
-        top: -5px;
+        top: -30;
         left: 0;
         background: url("../img/detalhe_intro.svg") no-repeat center;
         position: absolute;
-        z-index: -1;
-      }
+      }*/
+      
   }
   &__title-center{
     text-align: center;

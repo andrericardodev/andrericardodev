@@ -100,27 +100,26 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 1rem 0;
+  padding: 2.5rem 0;
 }
 
 .section__title {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: left;
+  padding-top: 3rem;
   margin-bottom: var(--mb-2);
   position: relative;
-}
-
-.section__title::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 10px;
-  top: -5px;
-  left: 0;
-  background: url("../img/detalhe_intro.svg") no-repeat center;
-  position: absolute;
-  z-index: -1;
+  /*&::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 10px;
+        top: -30;
+        left: 0;
+        background: url("../img/detalhe_intro.svg") no-repeat center;
+        position: absolute;
+      }*/
 }
 
 .section__title-center {
@@ -426,6 +425,24 @@ img {
 }
 
 /*=============== SERVICES ===============*/
+.services {
+  background: var(--gray02);
+  padding-bottom: 4.5rem;
+  position: relative;
+}
+
+.services::before {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 93px;
+  background: url("../img/detalhe_intro.svg") no-repeat center;
+  position: absolute;
+  top: -2.5rem;
+  right: 3rem;
+  z-index: 10;
+}
+
 .services__container {
   width: 100%;
 }
@@ -437,7 +454,7 @@ img {
       grid-template-columns: 1fr 1fr;
   max-width: 100%;
   margin: 0 auto;
-  gap: 20px;
+  gap: 40px;
 }
 
 @media (max-width: 700px) {
@@ -448,7 +465,7 @@ img {
 }
 
 .services__card {
-  background: white;
+  background: var(--gray01);
   border-bottom: 3px solid var(--first-color-light);
   padding: 50px;
   border-radius: 6px;
