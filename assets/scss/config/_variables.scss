@@ -11,6 +11,20 @@
     --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
     --first-color-alt: hsl(var(--hue), var(--sat), 50%);
 
+    /* Gray */
+    --gray01: hsl(var(--hue), 0%, 97%);
+    --gray02: hsl(var(--hue), 0%, 93%);
+    --gray03: hsl(var(--hue), 0%, 87%);
+    --gray04: hsl(var(--hue), 0%, 80%);
+    --gray05: hsl(var(--hue), 0%, 70%);
+    --gray06: hsl(var(--hue), 0%, 61%);
+    --gray07: hsl(var(--hue), 0%, 44%);
+    --gray08: hsl(var(--hue), 0%, 35%);
+    --gray09: hsl(var(--hue), 0%, 25%);
+    --gray10: hsl(var(--hue), 0%, 18%);
+    --gray11: hsl(var(--hue), 0%, 10%);
+    --gray12: hsl(var(--hue), 0%, 5%);
+
     --title-color: hsl(var(--hue), 0%, 5%);
     --subtitle-color: hsl(var(--hue), 0%, 35%);
     --text-color: hsl(var(--hue), 0%, 20%);
@@ -27,7 +41,7 @@
     --title-font: 'Vollkorn', serif;
 
     --biggest-font-size: 4.5em;
-    --h2-font-size: 2em;
+    --h2-font-size: 4em;
     --h3-font-size: 1.125em;
     --normal-font-size: 1em;
     --small-font-size: .813em;

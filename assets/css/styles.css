@@ -9,6 +9,19 @@
   --first-color-dark: hsl(var(--hue), var(--sat), 45%);
   --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
   --first-color-alt: hsl(var(--hue), var(--sat), 50%);
+  /* Gray */
+  --gray01: hsl(var(--hue), 0%, 97%);
+  --gray02: hsl(var(--hue), 0%, 93%);
+  --gray03: hsl(var(--hue), 0%, 87%);
+  --gray04: hsl(var(--hue), 0%, 80%);
+  --gray05: hsl(var(--hue), 0%, 70%);
+  --gray06: hsl(var(--hue), 0%, 61%);
+  --gray07: hsl(var(--hue), 0%, 44%);
+  --gray08: hsl(var(--hue), 0%, 35%);
+  --gray09: hsl(var(--hue), 0%, 25%);
+  --gray10: hsl(var(--hue), 0%, 18%);
+  --gray11: hsl(var(--hue), 0%, 10%);
+  --gray12: hsl(var(--hue), 0%, 5%);
   --title-color: hsl(var(--hue), 0%, 5%);
   --subtitle-color: hsl(var(--hue), 0%, 35%);
   --text-color: hsl(var(--hue), 0%, 20%);
@@ -21,7 +34,7 @@
   --body-font: 'Fira Sans', sans-serif;
   --title-font: 'Vollkorn', serif;
   --biggest-font-size: 4.5em;
-  --h2-font-size: 2em;
+  --h2-font-size: 4em;
   --h3-font-size: 1.125em;
   --normal-font-size: 1em;
   --small-font-size: .813em;
@@ -94,19 +107,20 @@ img {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: left;
-  margin-bottom: var(--mb-0-5);
-  margin-left: 10px;
+  margin-bottom: var(--mb-4);
   position: relative;
 }
 
 .section__title::before {
   content: "";
-  width: 5px;
-  height: 40px;
-  background-color: var(--first-color);
+  display: block;
+  width: 30px;
+  height: 10px;
+  top: -5px;
+  left: 0;
+  background: url("../img/detalhe_intro.svg") no-repeat center;
   position: absolute;
-  top: 0;
-  left: -10px;
+  z-index: -1;
 }
 
 .section__title-center {
@@ -244,6 +258,10 @@ img {
           justify-content: space-between;
 }
 
+.home__data {
+  width: 70%;
+}
+
 .home__title {
   font-size: var(--biggest-font-size);
   line-height: 1.125;
@@ -300,7 +318,11 @@ img {
   font-size: 1.5rem;
   line-height: 1.125;
   margin-bottom: var(--mb-2);
-  color: var(--subtitle-color);
+  color: var(--gray08);
+}
+
+.home__description strong {
+  color: var(--gray10);
 }
 
 @media (max-width: 700px) {
@@ -364,6 +386,8 @@ img {
 /*=============== ABOUT ===============*/
 .about__container {
   gap: 2.5rem;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
 }
 
 .about__data {
@@ -371,7 +395,8 @@ img {
 }
 
 .about__description {
-  line-height: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 1.125;
 }
 
 /*=============== SCROLL UP ===============*/
