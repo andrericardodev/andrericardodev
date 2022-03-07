@@ -243,6 +243,10 @@ img {
   font-weight: var(--font-normal);
 }
 
+.nav__link {
+  padding: 10px 10px;
+}
+
 .nav__toggle {
   display: none;
 }
@@ -450,6 +454,21 @@ img {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--gray03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray06);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray07);
 }
 
 /*=============== MEDIA QUERIES ===============*/
