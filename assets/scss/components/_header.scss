@@ -11,10 +11,6 @@
   &__shadow{
     box-shadow: var(--box-shadow);
   }
-
-  &__shadow .nav{
-    height: calc(var(--header-height) - 1rem);
-  }
 }
 
 /*=============== NAV ===============*/
@@ -25,10 +21,14 @@
   align-items: center;
   flex-wrap: wrap;
 
+  &__logo{
+    margin-right: 2rem;
+  }
+
   &__list {
     display: flex;
     align-items: center;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
   }
 
   &__link,
@@ -44,6 +44,19 @@
 
   &__toggle {
     display: none;
+  }
+
+  @media (max-width: 700px) {
+    
+    &__logo{
+      width: 130px;
+      margin-right: 1rem;
+    }
+
+    &__link{
+      padding: 10px 10px;
+    }
+
   }
   /*&__menu{
     @media screen and (max-width: 767px) {

@@ -4,6 +4,25 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("header__shadow", window.scrollY > 0);
 })
 
+/*============ Navigation menu active ============*/
+window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        let sectionHeight = current.offsetHeight;
+        let sectionTop = current.offsetTop - 50;
+        let id = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(".nav__list a[href*=" + id + "]").classList.add("active")            
+        } else {
+            document.querySelector(".nav__list a[href*=" + id + "]").classList.remove("active") 
+        } 
+
+    });
+});
+
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
