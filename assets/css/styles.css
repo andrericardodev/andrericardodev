@@ -429,6 +429,7 @@ img {
   background: var(--gray02);
   padding-bottom: 4.5rem;
   position: relative;
+  width: 100%;
 }
 
 .services::before {
@@ -491,6 +492,78 @@ img {
 
 .services__description {
   font-size: 1.125em;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background: var(--gray12);
+  padding-top: 7.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  color: var(--gray03);
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 93px;
+  background: url("../img/detalhe_intro.svg") no-repeat center;
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  z-index: 10;
+}
+
+.footer__container {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+@media (max-width: 900px) {
+  .footer__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.footer__text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: var(--gray03);
+}
+
+.footer__contato li {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer__contato li i {
+  font-size: 2.25rem;
+  color: var(--gray06);
+  margin-right: 20px;
+}
+
+.footer__contato li a {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer__contato li {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #9c9c9c;
 }
 
 /*=============== SCROLL UP ===============*/

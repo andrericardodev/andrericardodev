@@ -1,0 +1,67 @@
+/*=============== FOOTER ===============*/
+.footer{
+  background: var(--gray12);
+  padding-top: 7.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  color: var(--gray03);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 93px;
+    background: url("../img/detalhe_intro.svg") no-repeat center;
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    z-index: 10;
+  }
+
+  &__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: var(--gray03);
+  }
+
+  &__contato{
+    li {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 30px;
+
+      i{
+        font-size: 2.25rem;
+        color: var(--gray06);
+        margin-right: 20px;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      @media (max-width: 900px) {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #9c9c9c;
+  }
+}
